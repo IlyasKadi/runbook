@@ -1,0 +1,29 @@
+# file uploading
+
+- Check for in place client side filtering.
+- Check for server side filtering.
+  - Obfuscate extension by uploading a file named `web.jpg.php`.
+  - Using other extensions that are also recognized as PHP files. See the following list.
+```shell
+php
+phtml
+php3
+php4
+php5
+php7
+phps
+php-s
+pht
+phar
+```
+- Check for server side filtering on magic numbers. 
+Check file type using.
+
+```shell
+file web.php
+```
+Use `hexeditor` to manipulate file type.
+```shell
+hexeditor web.php
+```
+List of signatures can be found at [https://en.wikipedia.org/wiki/List_of_file_signatures](https://en.wikipedia.org/wiki/List_of_file_signatures).
