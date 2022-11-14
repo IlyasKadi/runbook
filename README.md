@@ -1,4 +1,4 @@
-# about
+# About
 - :notebook: My pentesting runbook.
 - :rocket: These notes are published using GitBook at [https://pentest-notes.a3cipher.com](https://pentest-notes.a3cipher.com).
 - :information_source: These notes contain references to external sources such as
