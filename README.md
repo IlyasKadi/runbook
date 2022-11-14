@@ -1,6 +1,6 @@
 # about
 - :notebook: My pentesting runbook.
-- :rocket: These notes are published using GitBook at [https://runbook.a3cipher.com](https://runbook.a3cipher.com).
+- :rocket: These notes are published using GitBook at [https://pentest-notes.a3cipher.com](https://pentest-notes.a3cipher.com).
 - :information_source: These notes contain references to external sources such as
     - Wikipedia [https://en.wikipedia.org](https://en.wikipedia.org)
     - HackTheBox [https://hackthebox.com](https://hackthebox.com)
