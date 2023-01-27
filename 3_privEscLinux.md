@@ -2,7 +2,7 @@
 
 ## Manual scanning
 
-- Check for sensitive files.
+- Check for sensitive files in home directories.
 
 ```
 find /home/ -name .bash_history 2> /dev/null
@@ -12,11 +12,7 @@ find /home/ -name .bash_history 2> /dev/null
 find /home/ -name .ssh 2> /dev/null
 ```
 
-```
-find / -name id_rsa 2> /dev/null 
-```
-
-- Check the web server directory for sensitive files.
+- Check for sensitive files in web server directory.
 
 ```
 find /var/www/ -name "*config*.*"
@@ -24,6 +20,18 @@ find /var/www/ -name "*config*.*"
 
 ```
 find /var/www/ -name "*.db"
+```
+
+- Check for sensitive files in other directories.
+
+```
+/home
+~
+/
+```
+
+```
+find / -name id_rsa 2> /dev/null 
 ```
 
 - Check for readable hashes
