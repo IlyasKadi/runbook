@@ -76,6 +76,12 @@ find / -perm -u=s -type f -ls 2>/dev/null
 getcap -r / 2> /dev/null
 ```
 
+- Check socket statistics for processes exposed on the machine.
+
+```
+ss -s -l -n -t -u
+```
+
 - Check the environment variables of the shell. 
 - Check if there are scripts or commands to are vulnerable to `PATH` manipulation.
 - Check for kernel exploits.
