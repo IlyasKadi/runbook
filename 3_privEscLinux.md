@@ -30,10 +30,6 @@ find /var/www/ -name "*.db"
 /
 ```
 
-```
-find / -name id_rsa 2> /dev/null 
-```
-
 - Check for readable hashes
 
 ```shell
