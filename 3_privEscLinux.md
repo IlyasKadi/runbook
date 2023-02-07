@@ -6,9 +6,6 @@
 
 ```
 find /home/ -name .bash_history 2> /dev/null
-```
-
-```
 find /home/ -name .ssh 2> /dev/null
 ```
 
@@ -16,9 +13,6 @@ find /home/ -name .ssh 2> /dev/null
 
 ```
 find /var/www/ -name "*config*.*"
-```
-
-```
 find /var/www/ -name "*.db"
 ```
 
@@ -30,9 +24,10 @@ find /var/www/ -name "*.db"
 /
 ```
 
-- Check for readable hashes
+- Check for weak password files
 
 ```shell
+ls -l /etc/passwd
 ls -l /etc/shadow
 ```
 
