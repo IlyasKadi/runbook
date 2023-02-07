@@ -1,5 +1,12 @@
 # 2 HTTP
 
+## Manual scanning
+
+- Check for `robots.txt` file.
+- Check out the page's source code using dev tools.
+- Software detection. Does the software have known vulnerabilities?
+- Software detection. Does this site / software have default credentials?
+
 ## Automated scanning
 
 - Run `gobuster` for finding directories on the web server.
@@ -18,12 +25,6 @@ gobuster dir --url http://$ip --wordlist=/usr/share/dirbuster/wordlists/director
 
 - Run `ffuf` for subdomain enumeration. 
 
-## Manual scanning
-
-- Check for `robots.txt` file.
-- Check out the page's source code using dev tools.
-- Software detection. Does the software have known vulnerabilities?
-- Software detection. Does this site / software have default credentials?
 
 ## Injection attacks
 
