@@ -5,8 +5,7 @@
 - Check for sensitive files in home directories.
 
 ```
-find /home/ -name .bash_history 2> /dev/null
-find /home/ -name .ssh 2> /dev/null
+find /home/ -name .bash_history 2> /dev/null; find /home/ -name .ssh 2> /dev/null
 ```
 
 - Check for sensitive files in web server directory.
@@ -27,8 +26,7 @@ find /var/www/ -name "*.db"
 - Check for weak password files
 
 ```shell
-ls -l /etc/passwd
-ls -l /etc/shadow
+ls -l /etc/passwd; ls -l /etc/shadow
 ```
 
 - Check sudo commands.
