@@ -11,8 +11,7 @@ find /home/ -name .bash_history 2> /dev/null; find /home/ -name .ssh 2> /dev/nul
 - Check for sensitive files in web server directory.
 
 ```
-find /var/www/ -name "*config*.*"
-find /var/www/ -name "*.db"
+find /var/www/ -name "*config*.*"; find /var/www/ -name "*.db"
 ```
 
 - Check for sensitive files in other directories.
