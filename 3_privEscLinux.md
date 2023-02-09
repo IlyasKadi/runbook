@@ -14,6 +14,7 @@ find /home/ -name .ssh 2> /dev/null
 ```
 find /var/www/ -name "*config*.*"
 find /var/www/ -name "*.db"
+which msyql
 ```
 
 - Check for sensitive files in other directories.
