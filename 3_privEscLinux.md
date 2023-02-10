@@ -12,7 +12,8 @@ find /home/ -name .ssh 2> /dev/null
 - Check for sensitive files in web server directory.
 
 ```
-find /var/www/ -name "*config*.*"
+find /var/www/ -name "config.php"
+find /var/www/ -name "initialize.php"
 find /var/www/ -name "*.db"
 which msyql
 ```
