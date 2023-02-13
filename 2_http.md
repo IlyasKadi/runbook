@@ -43,7 +43,7 @@ gobuster dir --url http://$ip --wordlist=/usr/share/dirbuster/wordlists/director
 <h1>Hi</h1>
 ```
 ```
-<script>alert('hi');</script>
+<script>alert('Hi');</script>
 ```
 
 - Check for SSTI (server side template injection) using
