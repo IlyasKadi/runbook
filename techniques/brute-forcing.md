@@ -1,5 +1,6 @@
 # brute forcing
 
+- Try software default credentials
 - Try the following usernames
 
 ```shell
