@@ -63,7 +63,8 @@ See [https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-inject
 
 - Check for file inclusions to the file `/etc/passwd`.
 - Use null bytes `%00` to surpass forced file extensions.
-- Add suffix `/etc/passwd/.` to bypass file blacklisting.
-- Use relative paths `dir/../../file/path` to bypass dir whitelisting.
+- Use `.././..` to bypass `../../` filters.
+- Add suffix `/etc/passwd/.` to bypass filters.
+- Use relative paths `dir/../../file/path` to bypass filters.
 - Go for remote file inclusions.
 
