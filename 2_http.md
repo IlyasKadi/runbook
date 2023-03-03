@@ -62,9 +62,15 @@ See [https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-inject
 ## File inclusion
 
 - Check for file inclusions to the file `/etc/passwd`.
-- Use null bytes `%00` to surpass forced file extensions.
-- Use `.././..` to bypass `../../` filters.
-- Add suffix `/etc/passwd/.` to bypass filters.
-- Use relative paths `dir/../../file/path` to bypass filters.
-- Go for remote file inclusions.
+- Check for filter bypass
+    - Use `.././..` instead of `../..`.
+  - Use null bytes `%00` to bypass filters.
+  - Use suffix `/etc/passwd/.` to bypass filters.
+  - Use relative paths `dir/../../file/path` to bypass filters.
+- Check for source code using
 
+```
+php://filter/convert.base64-encode/resource=post.php
+```
+
+- Go for remote file inclusions.
