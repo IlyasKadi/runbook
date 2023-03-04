@@ -9,6 +9,13 @@ find /home/ -name .bash_history 2> /dev/null
 find /home/ -name .ssh 2> /dev/null
 ```
 
+- Check for weak password files
+
+```shell
+ls -l /etc/passwd
+ls -l /etc/shadow
+```
+
 - Check for sensitive files in web server directory.
 
 ```
@@ -24,13 +31,6 @@ which mysql
 /home
 ~
 /
-```
-
-- Check for weak password files
-
-```shell
-ls -l /etc/passwd
-ls -l /etc/shadow
 ```
 
 - Check sudo commands.
