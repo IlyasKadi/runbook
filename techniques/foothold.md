@@ -14,7 +14,7 @@
 
 - The well known pentestmonkey php reverse shell [https://github.com/pentestmonkey/php-reverse-shell](https://github.com/pentestmonkey/php-reverse-shell)
 
-- A list of reverse shell payloads [https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet](https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet).
+- A list of reverse shell payloads [PayloadsAllTheThings GitHub](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md).
 Common payloads include
 
 ```
