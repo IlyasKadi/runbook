@@ -6,16 +6,10 @@
 nmap -oN nmap/scan.logs $ip
 ```
 
-- Versioned port scan
-
-```shell
-nmap -oN nmap/scan_version.logs -sV -p ports $ip
-```
-
 - Vulnerable port scan
 
 ```shell
-nmap -oN nmap/scan_vuln.logs --script=vuln -p ports $ip
+nmap -oN nmap/scan_vuln.logs -sV --script=vuln -p ports $ip
 ```
 
 - All ports scan.
