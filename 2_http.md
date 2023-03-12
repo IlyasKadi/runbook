@@ -75,4 +75,5 @@ See [https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-inject
 php://filter/convert.base64-encode/resource=post.php
 ```
 
+- For nice file path targets see this [TryHackMe](https://tryhackme.com/room/fileinc) room.
 - Go for remote file inclusions.
