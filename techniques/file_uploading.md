@@ -22,7 +22,7 @@ Check file type using.
 ```shell
 file web.php
 ```
-Use `hexeditor` to manipulate file type.
+Use `hexeditor` to manipulate file type. Make sure to add random characters to beginning of the file not to overwite its contents!
 ```shell
 hexeditor web.php
 ```
