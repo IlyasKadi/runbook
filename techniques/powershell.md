@@ -1,10 +1,5 @@
 # powershell
 
-- Powershell equivalent of `wget`
-
-```powershell
-```
-
 - Powershell reverse shell can be found at [https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1](https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1). Connect to listener using
 
 ```powershell
