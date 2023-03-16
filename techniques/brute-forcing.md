@@ -26,6 +26,6 @@ hydra -f -L users.txt -P passwords.txt $ip http-post-form "/login:username=^USER
 - Brute force using educated passwords. Create list using
 
 ```shell
-crunch 10 10 -t "a3cipher%%" -o crunch.txt 
+crunch 9 9 -t "Fall202%^" -o crunch.txt
 ```
 - Try SQL injection
