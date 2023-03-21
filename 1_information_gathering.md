@@ -1,4 +1,4 @@
-# 1 information gathering
+# 1_information_gathering
 
 ## Passive information gathering
 
