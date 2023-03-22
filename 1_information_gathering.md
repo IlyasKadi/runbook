@@ -21,6 +21,12 @@ dig -t AXFR example.com @$ip
 dnsrecon --domain example.com
 ```
 
+- Identify the Web Application Firewall (WAF) solution that is being used with [wafw00f](https://github.com/EnableSecurity/wafw00f).
+
+```shell
+wafw00f example.com
+```
+
 ## Active information gathering
 
 Different `nmap` scans are listed below.
