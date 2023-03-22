@@ -1,4 +1,4 @@
-# 2_webapps
+# webapp
 
 ## Manual scanning
 
