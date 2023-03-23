@@ -8,6 +8,13 @@ Enumerate SMB with nmap using
 nmap -oN nmap/scan_SMB.logs -p 445 --script smb-protocols $ip
 ````
 
+Other scripts that can be used are
+
+```shell
+smb-security-mode
+smb-enum-sessions
+```
+
 ## clients
 
 - Check available shares
