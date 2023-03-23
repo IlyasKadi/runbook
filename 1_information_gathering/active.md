@@ -10,7 +10,7 @@ Different `nmap` scans are listed below.
 nmap $ip
 ```
 
-- Vulnerable port scan
+- Vulnerable port scan.
 
 ```shell
 nmap -sV --script=vuln -p ports $ip
@@ -22,13 +22,13 @@ nmap -sV --script=vuln -p ports $ip
 nmap -p- $ip
 ```
 
-- UDP port scan
+- UDP port scan.
 
 ```shell
 nmap -U $ip
 ```
 
-- TCP SYN scan (requires root privileges)
+- TCP SYN scan (requires root privileges).
 
 ```shell
 nmap -sS $ip
