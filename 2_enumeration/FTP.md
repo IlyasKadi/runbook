@@ -1,5 +1,13 @@
 # FTP
 
+## nmap
+
+```shell
+nmap -oN nmap/scan_ftp.logs -p 21 --script=ftp-anon $ip
+```
+
+## clients
+
 - Check anonymous log in.
 
 ```shell
