@@ -1,5 +1,15 @@
 # SMB
 
+## nmap
+
+Enumerate SMB with nmap using
+
+````shell
+nmap -oN nmap/scan_SMB.logs -p 445 --script smb-protocols $ip
+````
+
+## clients
+
 - Check available shares
 
 ```shell
