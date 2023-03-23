@@ -13,6 +13,7 @@ Other scripts that can be used are
 ```shell
 smb-security-mode
 smb-enum-sessions
+smb-enum-shares
 ```
 
 ## clients
