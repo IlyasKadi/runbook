@@ -6,7 +6,7 @@
 nmap -oN nmap/scan_smb.logs -p 445 --script smb-protocols $ip
 ````
 
-Other scripts that can be used are
+Other scripts are
 
 ```shell
 smb-security-mode

@@ -6,7 +6,7 @@
 nmap -oN nmap/scan_ssh.logs -p 22 --script=ssh2-enum-algos $ip
 ```
 
-Other scripts that can be used are
+Other scripts are
 
 ```shell
 ssh-hostkey
