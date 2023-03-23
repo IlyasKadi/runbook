@@ -33,3 +33,9 @@ nmap -U $ip
 ```shell
 nmap -sS $ip
 ```
+
+- Ping scan / ping sweep a network.
+
+```shell
+nmap -sn 10.10.0.0/16
+```
