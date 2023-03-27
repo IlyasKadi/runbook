@@ -10,10 +10,10 @@ Different `nmap` scans are listed below.
 nmap $ip
 ```
 
-- Vulnerable port scan.
+- Version port scan.
 
 ```shell
-nmap -sV --script=vuln -p ports $ip
+nmap -sV -p ports $ip
 ```
 
 - All ports scan.
