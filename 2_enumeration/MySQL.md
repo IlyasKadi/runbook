@@ -3,7 +3,7 @@
 ## nmap
 
 ```shell
-nmap -oN nmap/scan_mysql.logs -p 3306 --script=mysql-empty-password $ip
+nmap -oN nmap/scan_mysql.logs -p 3306 -sV --script=mysql-empty-password $ip
 ```
 
 Other scripts are
