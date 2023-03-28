@@ -7,25 +7,25 @@ Different `nmap` scans are listed below.
 - Simple port scan.
 
 ```shell
-nmap $ip
-```
-
-- Version port scan.
-
-```shell
-nmap -sV -p ports $ip
+nmap -oN nmap/scan.logs $ip
 ```
 
 - All ports scan.
 
 ```shell
-nmap -p- $ip
+nmap -oN nmap/scan_all.logs -p- $ip
+```
+
+- Versioned port scan.
+
+```shell
+nmap -oN nmap/scan_version.logs -sV -p ports $ip
 ```
 
 - UDP port scan.
 
 ```shell
-nmap -U $ip
+nmap -oN nmap/scan_udp.logs -U $ip
 ```
 
 - TCP SYN scan (requires root privileges).
