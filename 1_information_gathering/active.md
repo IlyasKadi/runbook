@@ -7,7 +7,7 @@ Different `nmap` scans are listed below.
 - Simple port scan.
 
 ```shell
-nmap -oN nmap/scan.logs $ip
+nmap $ip
 ```
 
 - All ports scan.
