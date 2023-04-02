@@ -3,5 +3,5 @@
 ## nmap
 
 ```shell
-nmap -oN nmap/scan_smtp.logs -p 25 -sV --script smtp-commands $ip
+nmap -oN nmap/scan_25.logs -p 25 -sV --script smtp-commands $ip
 ```

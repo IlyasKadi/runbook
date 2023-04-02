@@ -3,7 +3,7 @@
 ## nmap
 
 ```shell
-nmap -oN nmap/scan_rdp.logs -p 3389 -sV --script rdp-enum-encryption $ip 
+nmap -oN nmap/scan_3389.logs -p 3389 -sV --script rdp-enum-encryption $ip
 ```
 
 ## clients

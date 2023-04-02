@@ -22,10 +22,10 @@ nmap -oN nmap/scan_all.logs -p- $ip
 nmap -oN nmap/scan_version.logs -sV -p ports $ip
 ```
 
-- UDP port scan.
+- UDP port scan (requires root privileges).
 
 ```shell
-nmap -oN nmap/scan_udp.logs -U $ip
+sudo nmap -oN nmap/scan_udp.logs -U $ip
 ```
 
 - TCP SYN scan (requires root privileges).
