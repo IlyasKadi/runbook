@@ -1,0 +1,16 @@
+# 4_LFI
+
+- Check for file inclusions to the file `/etc/passwd`.
+- Check for filter bypass
+    - Use `.././..` instead of `../..`.
+    - Use null bytes `%00` to bypass filters.
+    - Use suffix `/etc/passwd/.` to bypass filters.
+    - Use relative paths `dir/../../file/path` to bypass filters.
+- Check for source code using
+
+```
+php://filter/convert.base64-encode/resource=post.php
+```
+
+- For nice file path targets see this [TryHackMe](https://tryhackme.com/room/fileinc) room.
+- Go for remote file inclusions.
