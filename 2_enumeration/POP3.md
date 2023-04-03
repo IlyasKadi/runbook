@@ -2,6 +2,10 @@
 
 ## nmap
 
+```shell
+nmap -oN nmap/scan_110.logs -p 110 -sV --script pop3-capabilities $ip
+```
+
 ## clients 
 Below we provide basic commands to interact with a POP3 server.
 
