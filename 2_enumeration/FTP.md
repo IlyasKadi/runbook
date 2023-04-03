@@ -3,7 +3,7 @@
 ## nmap
 
 ```shell
-nmap -oN nmap/scan_21.logs -p 21 -sV --script ftp-anon $ip
+nmap -oN nmap/21.logs -p 21 -sV --script ftp-anon $ip
 ```
 
 ## clients

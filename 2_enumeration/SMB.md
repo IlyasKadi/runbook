@@ -3,7 +3,7 @@
 ## nmap
 
 ````shell
-nmap -oN nmap/scan_445.logs -p 445 -sV --script smb-protocols $ip
+nmap -oN nmap/445.logs -p 445 -sV --script smb-protocols $ip
 ````
 
 Other scripts are
