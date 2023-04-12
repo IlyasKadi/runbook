@@ -39,3 +39,9 @@ nmap -sS $ip
 ```shell
 nmap -sn 10.10.0.0/16
 ```
+
+- Find DNS server on a network.
+
+```shell
+nmap -p 53 --open 10.0.0.0/24
+```
