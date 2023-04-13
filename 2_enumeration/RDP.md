@@ -11,3 +11,7 @@ nmap -oN nmap/3389.logs -p 3389 -sV --script rdp-enum-encryption $ip
 ```shell
 xfreerdp /v:$ip /u:username /p:password
 ```
+
+```shell
+xfreerdp /v:$ip /u:username /p:password /d:domain
+```
