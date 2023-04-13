@@ -12,14 +12,6 @@ nmap -oN nmap/445.logs -p 445 -sV \
   $ip
 ````
 
-Other scripts are
-
-```shell
-smb-security-mode
-smb-enum-sessions
-smb-enum-shares
-```
-
 ## clients
 
 - Check available shares
@@ -34,11 +26,6 @@ smbclient -U anonymous -L $ip
 smbclient -U anonymous //$ip/sharename
 ```
 
-- Check for null sessions [https://en.wikipedia.org/wiki/Null_session](https://en.wikipedia.org/wiki/Null_session) by running
-
-```shell
-smbclient -U anonymous //$ip/IPC$
-```
 - Automated enumeration using `enum4linux`.
 
 - Enumerate shares blindly using
@@ -46,6 +33,8 @@ smbclient -U anonymous //$ip/IPC$
 ```shell
 enum4linux -s /usr/share/wordlists/rockyou.txt $ip
 ```
+
+- Gain a meterpreter shell using the `exploit/windows/smb/psexec` metasploit module.
 
 ## Helpers
 
