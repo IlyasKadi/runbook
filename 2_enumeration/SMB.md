@@ -14,13 +14,13 @@ nmap -oN nmap/445.logs -p 445 -sV \
 
 ## clients
 
-- Check available shares
+- Check available shares.
 
 ```shell
 smbclient -U anonymous -L $ip
 ```
 
-- Check indivual share
+- Check for individual share.
 
 ```shell
 smbclient -U anonymous //$ip/sharename
@@ -35,6 +35,12 @@ enum4linux -s /usr/share/wordlists/rockyou.txt $ip
 ```
 
 - Gain a meterpreter shell using the `exploit/windows/smb/psexec` metasploit module.
+- Interact with SMB from a windows host.
+
+```shell
+net view $ip
+net use D: \\$ip\sharename
+```
 
 ## Helpers
 
