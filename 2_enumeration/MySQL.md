@@ -17,5 +17,5 @@ mysql-info
 Log in to MySQL server using the cli
 
 ```shell
-mysql --user username --host $ip -p
+mysql -h $ip -P 3306 -u username -p 
 ```
