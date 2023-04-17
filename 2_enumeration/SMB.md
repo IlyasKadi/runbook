@@ -4,7 +4,6 @@
 
 ````shell
 nmap -oN nmap/445.logs -p 445 -sV \
-  --script smb-vuln-ms17-010.nse \
   --script smb-enum-shares \
   --script smb-enum-users \
   --script smb-os-discovery \
