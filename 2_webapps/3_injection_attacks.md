@@ -1,6 +1,28 @@
 # 3_injection_attacks
 
-## Injection attacks
+## Command injection
+
+For injection commands into text fields / URLs use the following characters
+
+```shell
+;
+|
+``
+```
+
+## SSTI
+
+- Check for SSTI (server side template injection) using
+
+```
+{{7*7}}
+${7*7}
+<%= 7*7 %>
+${{7*7}}
+#{7*7}
+```
+
+## SQL injection
 
 - Check for SQL injection points using
 
@@ -11,6 +33,8 @@
 ' or 1=1 -- -
 ```
 
+## XSS
+
 - Check for XSS (cross site scripting) vulnerabilities using
 
 ```
@@ -18,16 +42,6 @@
 ```
 ```
 <script>alert('Hi');</script>
-```
-
-- Check for SSTI (server side template injection) using
-
-```
-{{7*7}}
-${7*7}
-<%= 7*7 %>
-${{7*7}}
-#{7*7}
 ```
 
 See [https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection) for more information on server side template injection.
