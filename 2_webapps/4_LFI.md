@@ -13,4 +13,10 @@ php://filter/convert.base64-encode/resource=post.php
 ```
 
 - For nice file path targets see this [TryHackMe](https://tryhackme.com/room/fileinc) room.
+- Fuzzing for LFI can be done using ffuf with
+
+```shell
+ffuf -u http://$ip/index.php?param=FUZZ -w /usr/share/seclists/Fuzzing/LFI/LFI-gracefulsecurity-linux.txt -fw wordcount
+```
+
 - Go for remote file inclusions.
