@@ -12,7 +12,7 @@ gobuster dir -u http://$ip -o gobuster/medium.txt --no-color -w /usr/share/dirbu
 ```
 
 ```shell
-gobuster dir -u http://$ip -o gobuster/extens.txt --no-color -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x txt,html,php 
+gobuster dir -u http://$ip -o gobuster/extensions.txt --no-color -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x txt,html,php 
 ```
 
 ## Subdomain enumeration
