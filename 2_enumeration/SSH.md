@@ -3,7 +3,7 @@
 ## nmap
 
 ```shell
-nmap -oN nmap/22.logs -p 22 -sV --script vuln,ssh2-enum-algos $ip
+nmap -oN nmap/22.logs -p 22 -sV --script ssh2-enum-algos $ip
 ```
 
 Other scripts are

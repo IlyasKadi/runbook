@@ -3,7 +3,7 @@
 ## nmap
 
 ```shell
-nmap -oN nmap/3306.logs -p 3306 -sV --script vuln,mysql-empty-password $ip
+nmap -oN nmap/3306.logs -p 3306 -sV --script mysql-empty-password $ip
 ```
 
 Other scripts are
