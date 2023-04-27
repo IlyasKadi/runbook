@@ -14,18 +14,6 @@ nmap -oN nmap/21.logs -p 21 -sV --script vuln,ftp-anon $ip
 ftp anonymous@$ip
 ```
 
-- Check for vulnerabilities found during `nmap` enumeration.
-- Check common credentials
-
-```shell
-hydra \
-  -L /usr/share/seclists/Username/top-usernames-shortlist.txt \
-  -P /usr/share/seclists/Passwords/darkweb2017-top100.txt \
-  $ip ftp
-```
-
-- Brute force. 
-
 ## Helpers
 
 - If you get the message
