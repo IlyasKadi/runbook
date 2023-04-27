@@ -3,7 +3,7 @@
 ## nmap
 
 ```shell
-nmap -oN nmap/110.logs -p 110 -sV --script pop3-capabilities $ip
+nmap -oN nmap/110.logs -p 110 -sV --script vuln,pop3-capabilities $ip
 ```
 
 ## clients 

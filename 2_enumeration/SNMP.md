@@ -4,9 +4,7 @@
 
 ```shell
 sudo nmap -oN nmap/161.logs -sU -p 161 -sV \
-  --script snmp-win32-services \
-  --script snmp-brute \
-  $ip
+  --script vuln,snmp-win32-services,snmp-brute $ip
 ```
 
 ## clients

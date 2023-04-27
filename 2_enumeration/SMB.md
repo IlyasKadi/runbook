@@ -4,10 +4,7 @@
 
 ````shell
 nmap -oN nmap/445.logs -p 445 -sV \
-  --script smb-enum-shares \
-  --script smb-enum-users \
-  --script smb-os-discovery \
-  --script smb-protocols $ip
+  --script=vuln,smb-enum-shares,smb-enum-users,smb-os-discovery,smb-protocols $ip
 ````
 
 ## clients
