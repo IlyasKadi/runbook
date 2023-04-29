@@ -7,6 +7,12 @@ nmap -oN nmap/445.logs -p 445 -sV \
   --script=smb-enum-shares,smb-enum-users,smb-os-discovery,smb-protocols $ip
 ````
 
+and if the target is a windows machine
+
+```shell
+nmap -oN nmap/ms17-010.logs -p 445 --script smb-vuln-ms17-010.nse $ip
+```
+
 ## clients
 
 - Check available shares.
