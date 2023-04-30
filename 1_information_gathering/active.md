@@ -33,13 +33,13 @@ Different `nmap` scans are listed below.
 - Simple port scan.
 
 ```shell
-nmap -oN nmap/basic.logs $ip
+nmap -T4 -oN nmap/basic.logs $ip
 ```
 
 - All ports scan.
 
 ```shell
-nmap -oN nmap/all.logs -p- $ip
+nmap -T4 -oN nmap/all.logs -p- $ip
 ```
 
 - Versioned port scan.
@@ -51,7 +51,7 @@ nmap -oN nmap/version.logs -sV -p ports $ip
 - UDP port scan (requires root privileges).
 
 ```shell
-sudo nmap -oN nmap/udp.logs -U $ip
+sudo nmap -T4 -oN nmap/udp.logs -U $ip
 ```
 
 - TCP SYN scan (requires root privileges).
