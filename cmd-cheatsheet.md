@@ -9,3 +9,4 @@
 | pwd                              | cd                                  | pwd                                                                |
 | chown a3cipher:a3cipher hi.txt   | takeown /F hi.txt                   |                                                                    |
 | chmod 777 hi.txt                 | icacls hi.txt /grant "a3cipher:(F)" |                                                                    |
+| nc ip 4444                       |                                     | Test-NetConnection -ComputerName ip -Port 4444                     |
